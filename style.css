@@ -26,4 +26,8 @@ body{
    margin-left:130px;
    margin-right: 130px;
    background-color:white;
-   }
+}
+
+#timer{
+   color:#4682b4;
+}
