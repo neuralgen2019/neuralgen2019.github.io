@@ -6,12 +6,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="style.css">
 <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
 <style>
-html,body,h3,h2,h3,h4,h5,h6 {font-family:sans-serif;}
+html,body,h3,h3,h3,h4,h5,h6 {font-family:sans-serif;}
 .w3-sidebar {
   z-index: 3;
-  width: 250px;
+  width: 120px;
   top: 43px;
   bottom: 0;
   height: inherit;
@@ -32,36 +33,28 @@ html,body,h3,h2,h3,h4,h5,h6 {font-family:sans-serif;}
   </div>
 </div>
 
-<!-- Sidebar 
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>-->
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!--nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
+</nav-->
+
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main">
 <div class="w3-row w3-top-padding-64">
     <div class="w3-container">
   <h2>
     Methods for Optimizing and Evaluating Neural Language Generation (NeuralGen)
   </h2>
   </div>
-    <div class="w3-twothird w3-container">
-      <h2 class="w3-text-teal">Overview</h2>
+    <div class="w3-container">
+      <h3 class="w3-text">Overview</h3>
+      <div style="margin-left: 10pt;margin-right: 10pt;margin-right: 10pt">
       <p>The goal of this workshop is to discuss new methods for language generation that address some of the recurring problems in existing language generation techniques (eg. bland, repetitive language) as well as novel techniques for robustly evaluating and interpreting model output.</p>
       <p>We are accepting papers in the following areas:</p>
       <p><b>Novel approaches to training language generation models:</b> reinforcement learning with novel global scores; variational approaches to language production; adversarial training of generation models; editing and rewriting methods for language generation; multi-task learning for inductive biasing; pretrained discriminators; unsupervised, weakly supervised, and semi-supervised language generation</p>
       <p><b>Evaluation of language generation models:</b> new metrics for jointly or separately evaluating different characteristics of coherent language; training separate networks to evaluate generation models</p>
       <p><b>Generalization of language generation approaches:</b> interpreting the internals of language generation models; transfer learning for generation; style transfer approaches</p>
+    </div>
     </div>
     <!--div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -69,19 +62,57 @@ html,body,h3,h2,h3,h4,h5,h6 {font-family:sans-serif;}
     </div-->
   </div>
     <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h2 class="w3-text-teal">Contact Info</h2>
+    <div class="w3-container">
+      <h3 class="w3-text">Contact Info</h3>
+
+      <div style="margin-left: 10pt;margin-right: 10pt">
       <p>Email: neuralgen2019@gmail.com</p>
+    </div>
     </div>
   </div>
 
   <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h2 class="w3-text-teal">Program</h2>
+    <div class=" w3-container">
+      <h3 class="w3-text">Program</h3>
+
+      <div style="margin-left: 10pt;margin-right: 10pt">
       <h4>Highlights</h4>
       <ul>
         <li>6 speakers</li><li>Poster Session</li><li>Spotlight Session of best submitted abstracts</li><li>Panel Discussion</li>
       </ul>
+
+      <h4>Speakers</h4>
+      <table>
+
+        <tr>
+        <td width="180px" class="name">Kyunghyun Cho</td><td class="institution"> New York University, Facebook AI Research</td>
+        </tr>
+
+        <tr>
+        <td class="name">Yejin Choi</td><td class="institution"> University of Washington, Allen Institute for AI</td>
+        </tr>
+
+        <tr>
+        <td class="name">He He</td><td class="institution"> New York University, Amazon Web Services</td>
+        </tr>
+
+        <tr>
+        <td class="name">Mirella Lapata</td><td class="institution"> University of Edinburgh</td>
+        </tr>
+
+        <tr>
+        <td class="name">Graham Neubig</td><td class="institution"> Carnegie Mellon University</td>
+        </tr>
+
+        <tr>
+        <td class="name">Joelle Pineau</td><td class="institution"> McGill University, Facebook AI Research</td>
+        </tr>
+
+        <tr>
+        <td class="name">Alexander Rush</td><td class="institution"> Harvard University</td>
+        </tr>
+      </table>
+
       <h4>Schedule (prospective)</h4>
       <table>
         <tr><td width="100px" style="text-align:right">8:45 - 9:00</td><td style="padding-left:10px">Organizer Comments</td></tr>
@@ -99,7 +130,7 @@ html,body,h3,h2,h3,h4,h5,h6 {font-family:sans-serif;}
         <tr><td style="text-align:right"> 4:10 - 5:15</td><td style="padding-left:10px">Panel</td></tr>
 
       </table>
-
+    </div>
     </div>
     <!--div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -107,58 +138,109 @@ html,body,h3,h2,h3,h4,h5,h6 {font-family:sans-serif;}
     </div-->
   </div>
   <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h2 class="w3-text-teal">Organization</h2>
+    <div class="w3-container">
+      <h3 class="w3-text">Organization</h3>
+
+      <div style="margin-left: 10pt;margin-right: 10pt">
       <h4>Steering Committee</h4>
       <table>
         <tr>
-        <td width="180px">Yejin Choi</td><td> University of Washington</td>
+        <td width="180px" class="name">Yejin Choi</td><td class="institution"> University of Washington </td>
         </tr>
         <tr>
-        <td>Dan Jurafsky</td><td>Stanford University</td>
+        <td class="name">Dilek Hakkani-Tür</td><td class="institution"> Amazon Research</td>
         </tr>
         <tr>
-        <td>Alexander Rush</td><td> Harvard University</td>
+        <td class="name">Dan Jurafsky</td><td class="institution">Stanford University</td>
         </tr>
         <tr>
-        <td>Dilek Hakkani-Tür</td><td> Amazon Research</td>
+        <td class="name">Alexander Rush</td><td class="institution"> Harvard University</td>
         </tr>
       </table>
       <h4>Organizing Committee</h4>
       <table>
         <tr>
-        <td width="180px">Antoine Bosselut</td><td> University of Washington</td>
+        <td width="180px" class="name">Antoine Bosselut</td><td class="institution"> University of Washington</td>
         </tr>
         <tr>
-        <td>Marjan Ghazvininejad</td><td>Facebook AI Research</td>
+        <td class="name">Marjan Ghazvininejad</td><td class="institution">Facebook AI Research</td>
         </tr>
         <tr>
-        <td>Srinivasan Iyer</td><td>University of Washington</td>
+        <td class="name">Srinivasan Iyer</td><td class="institution">University of Washington</td>
         </tr>
         <tr>
-        <td>Urvashi Khandelwal</td><td> Stanford University</td>
+        <td class="name">Urvashi Khandelwal</td><td class="institution"> Stanford University</td>
         </tr>
         <tr>
-        <td>Hannah Rashkin</td><td>University of Washington</td>
+        <td class="name">Hannah Rashkin</td><td class="institution">University of Washington</td>
         </tr>
         <tr>
-        <td>Asli Celikyilmaz</td><td>Microsoft Research</td>
+        <td class="name">Asli Celikyilmaz</td><td class="institution">Microsoft Research</td>
         </tr>
       </table>
+
+      <h4 style="margin-bottom: 0px">Program Committee</h4>
+<div style="float: left; width: 25%;">
+        <ul>
+              <li class="name">  Adji Dieng </li>
+              <li class="name">  Alan Ritter </li>
+              <li class="name">  Alexander Rush </li>
+              <li class="name">  Angela Fan </li>
+              <li class="name">  Ari Holtzman </li>
+              <li class="name">  Arun Chaganty </li>
+              <li class="name">  Dallas Card </li>
+              <li class="name">  Daniel Fried </li>
+              <li class="name">  Dimitra Gkatzia </li>
+              <li class="name">  Dinghan Shen </li>
+        </ul>
+        </div>
+        <div style="float: left; width: 25%;">
+        <ul>
+              <li class="name">  Elizabeth Clark </li>
+              <li class="name">  Hamid Palangi </li>
+              <li class="name">  He He </li>
+              <li class="name">  Ioannis Konstas </li>
+              <li class="name">  Jan Buys </li>
+              <li class="name">  John Wieting </li>
+              <li class="name">  Kai-wei Chang </li>
+              <li class="name">  Maarten Sap </li>
+              <li class="name">  Mark Yatskar </li>
+              <li class="name">  Maxwell Forbes </li>
+        </ul>
+        </div>
+
+        <div style="float: left; width: 25%;">
+        <ul>
+              <li class="name">  Mohit Iyyer </li>
+              <li class="name">  Omer Levy </li>
+              <li class="name">  Ondrej Dusek </li>
+              <li class="name">  Po-Sen Huang </li>
+              <li class="name">  Ramakanth Pasunuru </li>
+              <li class="name">  Rik Koncel-Kedziorski </li>
+              <li class="name">  Roee Aharoni </li>
+              <li class="name">  Sam Wiseman </li>
+              <li class="name">  Sebastian Gerhmann </li>
+              <li class="name">  Siva Reddy </li>
+        </ul>
+        </div>
+        <div style="float: right; width: 25%;">
+        <ul>
+
+              <li class="name">  Spandana Gella </li>
+              <li class="name">  Swabha Swayampdipta </li>
+              <li class="name">  Tatsu Hashimoto </li>
+              <li class="name">  Vered Shwartz </li>
+              <li class="name">  Verena Rieser </li>
+              <li class="name">  Yangfeng Ji </li>
+              <li class="name">  Yizhe Zhang </li>
+              <li class="name">  Yonatan Bisk </li>
+        </ul>
+        </div>
     </div>
   </div>
-  <!--div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h2 class="w3-text-teal">Important Dates</h2>
-      <p>Empty Paragraph</p>
-    </div>
-  </div-->
 
+  </div>
 
-
-
-  <footer id="myFooter">
-  </footer>
 
 <!-- END MAIN -->
 </div>
@@ -167,26 +249,7 @@ html,body,h3,h2,h3,h4,h5,h6 {font-family:sans-serif;}
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
 </script>
-
 </body>
 </html>
