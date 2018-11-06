@@ -36,6 +36,6 @@ ul{
    margin:0px;
 }
 
-td{
+td,tr{
    height:20px;
 }
