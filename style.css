@@ -31,3 +31,11 @@ body{
 #timer{
    color:#4682b4;
 }
+
+ul{
+   margin:0px;
+}
+
+td{
+   height:30px;
+}
