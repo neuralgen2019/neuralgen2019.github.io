@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>NeuralGen Workshop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="style.css">
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+<style>
+html,body,h3,h3,h3,h3,h5,h6 {font-family:sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 120px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+.w3-top-padding-64{
+  padding-top: 64px!important;;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="organization.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Organization</a>
+    <a href="cfp.html" class="w3-bar-item w3-button  w3-theme-l1">Call For Papers</a>
+    <a href="submissions.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Submissions</a>
+  </div>
+</div>
+
+
+<!--nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
+</nav-->
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main">
+<div class="w3-row w3-top-padding-64">
+    <div class="w3-container">
+  <h2>
+    Methods for Optimizing and Evaluating Neural Language Generation (NeuralGen)
+  </h2>
+  </div>
+    <div class="w3-container">
+      <h3 >Call For Papers</h3>
+      <div style="margin-left: 50pt;margin-right: 50pt;">
+        <p>Advances in training deep neural networks for sequence modeling have led to an active and rising interest in language generation research. New approaches based on deep learning have allowed the community to tackle and achieve impressive results on numerous tasks such as machine translation [1], summarization [2], program generation [3] and more [4,5]. However, prevailing neural methods remain imperfect. Conditional language modeling losses are unable to capture global context [6]. Evaluation metrics are uncorrelated with human judgements leading to bias against expected model functionality [7], while high quality human evaluations remain costly. Effective transfer across tasks, languages and domains holds promise [8, 9], but remains only preliminarily explored.</p>
+
+        <p>We invite members of the community to participate in a discussion on addressing these issues and to contribute works that explore the next frontiers in neural language generation. We propose this workshop to explore commonalities and differences in various approaches to fixing the issues of neural language generation and are excited to receive submissions on the following topics:</p>
+
+        <b>Modeling Advancements:</b>
+        <ul>
+        <li>Beyond maximum likelihood training (eg: risk loss, reinforcement learning objectives, variational approaches, adversarial training, pretrained discriminators, other novel loss functions)</li>
+        <li>Unsupervised, weakly supervised, and semi-supervised language generation </li>
+        <li>Editing models</li>
+        <li>Mixing neural and template-based generation</li>
+        <li>Human-in-the-loop learning</li>
+        <li>Beyond teacher-forcing (beam search during training, non-autoregressive generation)</li>
+        </ul>
+
+        <b>Evaluation: </b><ul>
+        <li>New automatic metrics for evaluating different characteristics of coherent language</li>
+        <li>Evaluation using pretrained models</li>
+        <li>Proposing better human evaluation strategies</li>
+        </ul>
+
+      <b>Generalization: </b><ul>
+        <li>Transfer learning (unsupervised pre-training for generation, low-resource generation, domain adaptation) </li>
+        <li>Multi-task learning  </li>
+        <li>Model distillation </li>
+      </ul>
+      <b>Analysis:</b><ul>
+        <li>Model analysis, interpretability and/or visualizations</li>
+        <li>Error analysis of machine-generated language</li>
+        <li>Analysis of evaluation metrics</li>
+        <li>Benefits/drawbacks of different loss functions</li>
+        </ul></div>
+<h3>Important Dates:</h3>
+
+      <div style="margin-left: 10pt;margin-right: 50pt;">
+<div style="margin-left:50px">
+Call for Papers released: Wednesday, December 19, 2018<br>
+Workshop papers due: Monday, March 11, 2019 <br>
+Notification of acceptance: Friday, March 29, 2019 <br>
+Camera-ready papers due: Friday, April 5, 2019<br>
+Workshop dates: Thursday–Friday, June 6–7, 2019<br>
+</div>
+</div>
+<h3>Financial Assistance:</h3>
+
+<div style="margin-left: 50pt;margin-right: 50pt;">
+Partial financial Assistance will be available to authors of papers who demonstrate significant financial need. Financial assistance allocations will be made available after the accepted submissions are announced and BEFORE the workshop date.
+</div>
+<h3>Submission Guidelines:</h3>
+
+      <div style="margin-left: 50pt;margin-right: 50pt;">
+TBA
+</div>
+<h4>References:</h4>
+
+      <div style="margin-left: 10pt;margin-right: 50pt;">
+<div style="margin-left:50px;margin-bottom:20px">
+[1] Vaswani, Ashish, et al. "Attention is all you need." In NIPS. 2017.<br>
+[2] Celikyilmaz, Asli, et al. "Deep communicating agents for abstractive summarization." In NAACL. 2018.<br>
+[5] Ling, Wang, et al. "Latent predictor networks for code generation." In ACL. 2016.<br>
+[4] Bosselut, Antoine, et al. "Discourse-Aware Neural Rewards for Coherent Text Generation." In NAACL. 2018.<br>
+[5] Wiseman, Sam, Stuart M. Shieber, and Alexander M. Rush. "Challenges in data-to-document generation." In EMNLP. 2017.<br>
+[6] Holtzman, Ari, et al. "Learning to Write with Cooperative Discriminators." In ACL. 2018.<br>
+[7] Novikova, Jekaterina, et al. “Why We Need New Evaluation Metrics for NLG.” In EMNLP. 2017.<br>
+[8] Ramachandran, Prajit, et al. “Unsupervised Pretraining for Sequence to Sequence Learning.” In EMNLP. 2017.<br>
+[9] Gu, Jiatao, et al. “Meta-Learning for Low-Resource Neural Machine Translation.” In EMNLP. 2018.<br>
+</div>
+</div>
+    </div>
+    </div>
+</div>
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+
+</script>
+</body>
+</html>
