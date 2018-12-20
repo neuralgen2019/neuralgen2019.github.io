@@ -1,8 +1,7 @@
 
 .name {
-   font-weight: bolder;
-   color:#444444;
-   font-size: 12pt;
+   font-weight: bold;
+   font-size: 15px;
 }
 .institution{
    font-weight:lighter;
@@ -14,17 +13,17 @@ table{
    margin-right:20px;
 }
 
-.w3-text{
-   color:#4682b4;
-}
+
 
 body{
    background-color:#dddddd;
 }
 
 .w3-main{
-   margin-left:130px;
-   margin-right: 130px;
+   margin-left:50px;
+   margin-right: 50px;
+   padding-left:100px;
+   padding-right:100px;
    background-color:white;
 }
 
