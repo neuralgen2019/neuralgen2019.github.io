@@ -42,26 +42,40 @@ html,body,h3,h3,h3,h4,h5,h6 {font-family:sans-serif;}
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main">
 <div class="w3-row w3-top-padding-64">
-    <div class="w3-container" style="text-align:center">
-  <h3 style="text-align:center"> NeuralGen 2019
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+<td width="75%">
+<div class="w3-container" style="text-align:center">
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="67%" valign="middle">
+<h3 style="text-align:center"> NeuralGen 2019
   </h3>
   <h4 style="text-align:center">
     Methods for Optimizing and Evaluating Neural Language Generation
   </h4>
+  <p><b>Workshop co-located with <a href="https://naacl2019.org/">NAACL 2019</a> in Minneapolis!</b></p>
 
-      <p>Email: neuralgen2019@gmail.com</p>
-
+      <p>Email: <a href="mailto:neuralgen2019@gmail.com">neuralgen2019@gmail.com</a> — Twitter: <a href="https://twitter.com/NeuralGen">@NeuralGen</a> & <a href="https://twitter.com/hashtag/neuralgen2019?src=hash">#NeuralGen2019</a></p>
+    
+    </td>  
+      <td width="20%">
+          <img src="images/NeuralGen_logo_final.png" width="100%">
+        </td>
+      </tr>
+    </table>
   </div>
     <div class="w3-container">
       <h3 class="w3-text">Overview</h3>
       <div style="margin-left: 10pt;margin-right: 10pt;">
-      <p><b>Workshop co-located with <a href="https://naacl2019.org/">NAACL 2019</a> in Minneapolis!</b></p>
       <p>The goal of this workshop is to discuss new methods for language generation that address some of the recurring problems in existing language generation techniques (eg. bland, repetitive language) as well as novel techniques for robustly evaluating and interpreting model output.</p>
       <p>We are accepting papers in the following areas:</p>
       <ul>
-      <li><b>Novel approaches to training language generation models:</b> reinforcement learning with novel global scores; variational approaches to language production; adversarial training of generation models; editing and rewriting methods for language generation; multi-task learning for inductive biasing; pretrained discriminators; unsupervised, weakly supervised, and semi-supervised language generation</li>
-      <li><b>Evaluation of language generation models:</b> new metrics for jointly or separately evaluating different characteristics of coherent language; training separate networks to evaluate generation models</li>
-      <li><b>Generalization of language generation approaches:</b> interpreting the internals of language generation models; transfer learning for generation; style transfer approaches</li></ul>
+      <li><b>Novel architectures and new approaches to training models:</b> beyond maximum likelihood training (eg: risk loss, reinforcement learning objectives, variational approaches, adversarial training, pretrained discriminators, other novel loss functions), unsupervised, weakly supervised, and semi-supervised language generation, editing models, mixing neural and template-based generation, human-in-the-loop learning, beyond teacher-forcing (beam search during training, non-autoregressive generation).</li>
+      <li><b>Evaluation:</b> new automatic metrics for evaluating different characteristics of coherent language, evaluation using pretrained models, proposing better human evaluation strategies.</li>
+      <li><b>Generalization:</b> transfer learning (unsupervised pre-training for generation, low-resource generation, domain adaptation), multi-task learning, model distillation.</li>
+      <li><b>Analysis:</b> model analysis, interpretability and/or visualizations, eror analysis of machine-generated language, analysis of evaluation metrics, bnefits/drawbacks of different loss functions.
+        </li></ul>
     </div>
     </div>
     <!--div class="w3-third w3-container">
