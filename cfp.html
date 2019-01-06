@@ -30,7 +30,6 @@ html,body,h3,h3,h3,h3,h5,h6 {font-family:sans-serif;}
     <a href="index.html" class="w3-bar-item w3-button w3-button w3-hide-small w3-hover-white">Home</a>
     <a href="organization.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Organization</a>
     <a href="cfp.html" class="w3-bar-item w3-button  w3-theme-l1">Call For Papers</a>
-    <a href="submissions.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Submissions</a>
   </div>
 </div>
 
@@ -52,7 +51,7 @@ html,body,h3,h3,h3,h3,h5,h6 {font-family:sans-serif;}
   </h4>
   <p><b>Workshop co-located with <a href="https://naacl2019.org/">NAACL 2019</a> in Minneapolis!</b></p>
 
-      <p>Email: neuralgen2019@gmail.com</p>
+      <p>Email: <a href="mailto:neuralgen2019@gmail.com">neuralgen2019@gmail.com</a></p>
 
   </div>
     <div class="w3-container">
@@ -91,15 +90,18 @@ html,body,h3,h3,h3,h3,h5,h6 {font-family:sans-serif;}
         </ul></div>
 <h3>Important Dates:</h3>
 
-      <div style="margin-left: 10pt;margin-right: 50pt;">
-<div style="margin-left:50px">
-Call for Papers released: Monday, January 7, 2019<br>
-Workshop papers due: Monday, March 11, 2019 <br>
-Notification of acceptance: Friday, March 29, 2019 <br>
-Camera-ready papers due: Friday, April 5, 2019<br>
-Workshop dates: Thursday–Friday, June 6–7, 2019<br>
-</div>
-</div>
+      <div style="margin-left: 50pt;margin-right: 50pt;">
+    <p><b>Important Dates:</b></p>
+    <p> All deadlines are  are 11:59 PM GMT -12 (anywhere-on-earth time)</p>
+    <table>
+      <tr><td width="200px" style="text-align:right">Call For Papers:</td><td style="padding-left:10px">January 7, 2019</td></tr>
+      <tr><td width="200px" style="text-align:right">Deadline for submission:</td><td style="padding-left:10px">March 11, 2019</td></tr>
+      <tr><td width="200px" style="text-align:right">Notification of acceptance:</td><td style="padding-left:10px">March 29, 2019</td></tr>
+      <tr><td width="250px" style="text-align:right">Deadline for camera-ready version:</td><td style="padding-left:10px">April 5, 2019</td></tr>
+      <tr><td width="200px" style="text-align:right">Workshop Date:</td><td style="padding-left:10px">TBD: June 6 or 7, 2019</td></tr>
+    </table>
+    <p> Time until submission deadline:  <span id="timer" ></span></p>
+  </div>
 <h3>Financial Assistance:</h3>
 
 <div style="margin-left: 50pt;margin-right: 50pt;">
@@ -108,11 +110,7 @@ Partial financial Assistance will be available to authors of papers who demonstr
 <h3>Submission Guidelines:</h3>
 
 <div style="margin-left: 50pt;margin-right: 50pt;">
-  Submissions may contain between 4 and 8 pages of content, with unlimited references. They will undergo the double-blind review process and so must not identify authors or their affiliations. Please format your papers using the standard NAACL style files. Submissions on work published or submitted elsewhere are also permitted. Already published work will not be subject to the review process, will not be included in the workshop proceedings, and acceptance will be conditioned on relevance to the goals of the workshop.
-</div>
-<br>
-<div style="margin-left: 50pt;margin-right: 50pt;">
-    Presentation format and schedule will be announced before the camera-ready deadline.
+  Submissions may contain between 4 and 8 pages of content, with unlimited references. They will undergo the double-blind review process and so must not identify authors or their affiliations. Please format your papers using the standard NAACL style files. Submissions on work published or submitted elsewhere are also permitted. Already published work will not be subject to the review process, will not be included in the workshop proceedings, and acceptance will be conditioned on relevance to the goals of the workshop. Presentation format and schedule will be announced before the camera-ready deadline.
 </div>
 <br>
 <div style="margin-left: 50pt;margin-right: 50pt;">
@@ -144,6 +142,42 @@ Partial financial Assistance will be available to authors of papers who demonstr
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
+// Set the date we're counting down to
+var countDownDate = new Date("March 12, 2019 4:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    if (seconds % 3 != 0){
+    //clearInterval(x);
+    document.getElementById("timer").innerHTML = "TBD";
+    //document.getElementById("timer").style.color = "red";
+    }
+    else{
+    //clearInterval(x);
+    document.getElementById("timer").innerHTML = "";
+    //document.getElementById("timer").innerHTML = "";
+    }
+  }
+}, 1000);
 
 </script>
 </body>
